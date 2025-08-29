@@ -53,3 +53,7 @@ document.getElementById("call1").addEventListener('click', (e) => {
     let callHistory = document.getElementById("call-history");
     callHistory.appendChild(newDiv);
 })
+
+document.getElementById("clear").addEventListener('click', (e) => {
+    document.getElementById('call-history').innerHTML = '';
+})
