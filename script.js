@@ -31,10 +31,15 @@ document.getElementById("copy1").addEventListener('click', (e) => {
 })
 
 document.getElementById("call1").addEventListener('click', (e) => {
+
+    alert(e.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText + " " + 
+        e.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText)
+
     let coins = document.getElementById("coin-count");
     let numCoin = parseInt(coins.innerText);
 
     if (coins.innerText == "0") {
+        alert("Insufficient coins!");
         return;
     }
 
