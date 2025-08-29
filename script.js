@@ -34,6 +34,10 @@ document.getElementById("call1").addEventListener('click', (e) => {
     let coins = document.getElementById("coin-count");
     let numCoin = parseInt(coins.innerText);
 
+    if (coins.innerText == "0") {
+        return;
+    }
+
     coins.innerText = Math.max(numCoin - 20, 0);
 
     // call history;
