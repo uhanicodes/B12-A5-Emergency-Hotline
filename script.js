@@ -16,7 +16,7 @@ document.getElementById("copy1").addEventListener('click', (e) => {
     navigator.clipboard.writeText(document.getElementById("hotline1").innerText)
         .then(result => {
             alert("Copy successful!");
-            
+
             let copy = document.getElementById("count-copy");
             let numCopy = parseInt(copy.innerText);
     
@@ -28,4 +28,11 @@ document.getElementById("copy1").addEventListener('click', (e) => {
             alert("Copy is not successful!");
         })
 
+})
+
+document.getElementById("call1").addEventListener('click', (e) => {
+    let coins = document.getElementById("coin-count");
+    let numCoin = parseInt(coins.innerText);
+
+    coins.innerText = Math.max(numCoin - 20, 0);
 })
