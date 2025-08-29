@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotlines!</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/b7e022f127.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css style -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="flex justify-between items-center px-[60px] py-[25px]">
+        <div class="flex">
+            <img class="h-[50px] w-[50px] mr-[2.5px]" src="./assets/logo.png" alt="">
+            <p class="w[135px] text-green-800 font-extrabold">Emergency Service</p>
+        </div>
+        <div class="flex items-center w-full h-[100px]">
+            <button class="font-inter flex justify-center items-center bg-[#41ff6b1a] rounded-4xl w-[123px] h-[52px]"><span>0</span><img class="h-[30px] w-[30px] ml-[10px]" src="./assets/heart.png" alt=""></button>
+            <button class="font-inter flex justify-center items-center mx-[20px] bg-[#41ff6b1a] rounded-4xl w-[106px] h-[52px]"><span>100</span><img class="h-[30px] w-[30px] ml-[10px]" src="./assets/coin.png" alt=""></button>
+            <button class="bg-[#00a63e] rounded-4xl w-[127px] h-[52px] text-base text-white"><span>0 </span>Copy</button>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center bg-[#006747] pt-[20px] pb-[20px]">
+        <img class="h-[92px] w-[92px]" src="./assets/logo-dark.png" alt="">
+        <h1 class="text-4xl text-white font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
+        <p class="text-white font-medium text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+
     <div>
-        <h1>Emergency</h1>
+        <div>
+            <div class="p-4 rounded-xl ">
+                <div class="flex justify-between mb-[16px]">
+                    <img class="w-[60px] h-[60px] rounded-xl bg-[#FFE3E2]" src="./assets/emergency.png" alt="">
+                    <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+                </div>
+                <div class="mb-[24px]">
+                    <h1 class="font-hind-madurai">জাতীয় জরুরি সেবা</h1>
+                    <p>National Emergency</p>
+                </div>
+                <div class="mb-[24px]">
+                    <h1 class="font-bold text-3xl">999</h1>
+                    <p class="hind-madurai-regular text-gray-400">সার্বজনীন</p>
+                </div>
+                <div class="flex justify-between">
+                    <button class="btn text-gray-400"><i class="fa-regular fa-copy text-gray-400"></i>Copy</button>
+                    <button class="btn bg-[#00a63e] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                </div>
+            </div>       
+        </div>
+        <div>
+            <div>
+                <div>
+                    <p><i class="fa-regular fa-clock"></i>Call History</p>
+                </div>
+                <button class="bg-[#00a63e]">Clear</button>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <p>জাতীয় জরুরি সেবা</p>
+                        <p>999</p>
+                    </div>
+                    <time datetime=""></time>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
