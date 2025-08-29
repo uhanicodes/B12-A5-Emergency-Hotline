@@ -28,7 +28,7 @@
             <p class="w[135px] text-green-800 font-extrabold">Emergency Service</p>
         </div>
         <div class="flex items-center w-full h-[100px]">
-            <button class="font-inter flex justify-center items-center bg-[#41ff6b1a] rounded-4xl w-[123px] h-[52px]"><span>0</span><img class="h-[30px] w-[30px] ml-[10px]" src="./assets/heart.png" alt=""></button>
+            <button class="font-inter flex justify-center items-center bg-[#41ff6b1a] rounded-4xl w-[123px] h-[52px]"><span id="heart-count">0</span><img class="h-[30px] w-[30px] ml-[10px]" src="./assets/heart.png" alt=""></button>
             <button class="font-inter flex justify-center items-center mx-[20px] bg-[#41ff6b1a] rounded-4xl w-[106px] h-[52px]"><span>100</span><img class="h-[30px] w-[30px] ml-[10px]" src="./assets/coin.png" alt=""></button>
             <button class="bg-[#00a63e] rounded-4xl w-[127px] h-[52px] text-base text-white"><span>0 </span>Copy</button>
         </div>
@@ -40,12 +40,12 @@
         <p class="text-white font-medium text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
 
-    <div>
+    <div class="flex">
         <div>
             <div class="p-4 rounded-xl ">
                 <div class="flex justify-between mb-[16px]">
                     <img class="w-[60px] h-[60px] rounded-xl bg-[#FFE3E2]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+                    <i id="heart1" class="fa-regular fa-heart h-[24px] w-[24px]"></i>
                 </div>
                 <div class="mb-[24px]">
                     <h1 class="font-hind-madurai">জাতীয় জরুরি সেবা</h1>
@@ -64,7 +64,7 @@
         <div>
             <div>
                 <div>
-                    <p><i class="fa-regular fa-clock"></i>Call History</p>
+                    <p><i class="fa-regular fa-clock w-[24px] h-[24px]"></i>Call History</p>
                 </div>
                 <button class="bg-[#00a63e]">Clear</button>
             </div>
