@@ -35,4 +35,21 @@ document.getElementById("call1").addEventListener('click', (e) => {
     let numCoin = parseInt(coins.innerText);
 
     coins.innerText = Math.max(numCoin - 20, 0);
+
+    // call history;
+
+    let newDiv = document.createElement("div");
+
+    newDiv.setAttribute("class", "flex justify-between")
+
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+
+    newDiv.innerHTML = `<div>\
+                            <p>${e.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText}</p>\
+                            <p>${e.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText}</p>\
+                        </div>\
+                    <time datetime="">${timeString}</time>`;
+    let callHistory = document.getElementById("call-history");
+    callHistory.appendChild(newDiv);
 })
