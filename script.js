@@ -15,7 +15,8 @@ document.getElementById("heart4").addEventListener('click', clickEventHandler);
 document.getElementById("heart5").addEventListener('click', clickEventHandler);
 document.getElementById("heart6").addEventListener('click', clickEventHandler);
 
-document.getElementById("copy1").addEventListener('click', (e) => {
+
+let copyEventHandler = (e) => {
     // e.preventDefault();
     
     // copy to clipboard;
@@ -35,7 +36,14 @@ document.getElementById("copy1").addEventListener('click', (e) => {
             alert("Copy is not successful!");
         })
 
-})
+}
+
+document.getElementById("copy1").addEventListener('click', copyEventHandler)
+document.getElementById("copy2").addEventListener('click', copyEventHandler)
+document.getElementById("copy3").addEventListener('click', copyEventHandler)
+document.getElementById("copy4").addEventListener('click', copyEventHandler)
+document.getElementById("copy5").addEventListener('click', copyEventHandler)
+document.getElementById("copy6").addEventListener('click', copyEventHandler)
 
 document.getElementById("call1").addEventListener('click', (e) => {
 
