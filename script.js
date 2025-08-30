@@ -45,7 +45,7 @@ document.getElementById("copy4").addEventListener('click', copyEventHandler)
 document.getElementById("copy5").addEventListener('click', copyEventHandler)
 document.getElementById("copy6").addEventListener('click', copyEventHandler)
 
-document.getElementById("call1").addEventListener('click', (e) => {
+let callEventHandler = (e) => {
 
     alert(e.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText + " " + 
         e.target.parentNode.parentNode.childNodes[5].childNodes[1].innerText)
@@ -76,7 +76,14 @@ document.getElementById("call1").addEventListener('click', (e) => {
                     <time datetime="">${timeString}</time>`;
     let callHistory = document.getElementById("call-history");
     callHistory.appendChild(newDiv);
-})
+}
+
+document.getElementById("call1").addEventListener('click', callEventHandler);
+document.getElementById("call2").addEventListener('click', callEventHandler);
+document.getElementById("call3").addEventListener('click', callEventHandler);
+document.getElementById("call4").addEventListener('click', callEventHandler);
+document.getElementById("call5").addEventListener('click', callEventHandler);
+document.getElementById("call6").addEventListener('click', callEventHandler);
 
 document.getElementById("clear").addEventListener('click', (e) => {
     document.getElementById('call-history').innerHTML = '';
