@@ -1,4 +1,4 @@
-document.getElementById("heart1").addEventListener('click', (e) => {
+let clickEventHandler = (e) => {
     // e.preventDefault();
     let heart = document.getElementById("heart-count");
     let numHeart = parseInt(heart.innerText);
@@ -6,7 +6,14 @@ document.getElementById("heart1").addEventListener('click', (e) => {
     numHeart++;
 
     heart.innerText = numHeart;
-})
+}
+
+document.getElementById("heart1").addEventListener('click', clickEventHandler);
+document.getElementById("heart2").addEventListener('click', clickEventHandler);
+document.getElementById("heart3").addEventListener('click', clickEventHandler);
+document.getElementById("heart4").addEventListener('click', clickEventHandler);
+document.getElementById("heart5").addEventListener('click', clickEventHandler);
+document.getElementById("heart6").addEventListener('click', clickEventHandler);
 
 document.getElementById("copy1").addEventListener('click', (e) => {
     // e.preventDefault();
